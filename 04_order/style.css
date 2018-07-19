@@ -1,0 +1,39 @@
+/* box-sizing border-box bei allen Elementen. */
+* { box-sizing: border-box; }
+
+/* Standard Styles um Elemente sichtbar zu machen*/
+.item {
+	color: #fff;
+	font-size: 100px;
+	text-align: center;
+	text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+	padding: 10px;
+}
+
+.item1 { background-color: #EAD52D; }
+.item2 { background-color: #00D6FF; }
+.item3 { background-color: #008C83; }
+.item4 { background-color: #EA2DCE; }
+.item5 { background-color: #FA113D; }
+.item6 { background-color: #88C64F; }
+.item7 { background-color: #FF6973; }
+.item8 { background-color: #FFBB11; }
+.item9 { background-color: #2D87EA; }
+.item10 { background-color: #FA5732; }
+
+/* Hier beginnen wir mit der Flexbox. Oben ist nur setup. */
+.container {
+	display: flex;
+}
+
+.item {
+	flex: 1;
+}
+
+.item3 {
+	order: 5;
+}
+
+.item8 {
+	order: 4;
+}
